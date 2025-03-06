@@ -1,7 +1,7 @@
 import inflect
 
 
-def get_names_list():
+def collect_names():
     names_list = []
 
     while True:
@@ -17,7 +17,7 @@ def get_names_list():
 def main():
     p = inflect.engine()
 
-    names = get_names_list()
+    names = collect_names()
 
     print("Adieu, adieu, to " + p.join(names))
 
